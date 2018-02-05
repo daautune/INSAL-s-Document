@@ -1,12 +1,12 @@
 @import 'abstracts/variables';
-@import 'nav-menu';
+@import 'nav';
 @media only screen and (min-width: 992px) {
-    .__btn-menu {
+    .btn-menu {
         display:none;
     }
     .__contact {
+        display: block;
         background: $cl-white;
-        border-bottom: 1px solid $cl-light-gray;
     }
     .__mobile-header {
         background: $cl-white;
@@ -15,7 +15,9 @@
         color: $cl-gray;
     }
     .nav-menu {
-        display: inline-block;
+        display: none;
+        margin-top: -70px;
+        float: right;
     } 
     .menu-list {
         display: none;

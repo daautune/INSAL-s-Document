@@ -1,8 +1,9 @@
 @import 'abstracts/variables';
-@import 'logo';
 @import 'title';
-@import 'btn-menu';
 @media only screen and (min-width: 320px) {
+    .btn-menu {
+        display: block;
+    }
     .__contact {
         display: none;
     }
