@@ -1,0 +1,119 @@
+.__logo {
+  float: left;
+  margin-top: 25px;
+}
+
+.__title {
+  margin: 35px 25px;
+}
+
+.__btn-menu {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  background: #54cbe9;
+  margin-top: -65px;
+}
+
+.glyphicon-align-justify:before {
+  content: "\e055";
+}
+
+@media only screen and (min-width: 320px) {
+  .__contact {
+    display: none;
+  }
+
+  .__mobile-header {
+    width: 100%;
+    height: 100px;
+    background: #1a1919;
+  }
+}
+.nav-menu {
+  margin-left: -20px;
+}
+
+.__menu-list li {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 15px 0px;
+  border-bottom: 1px solid #dad6d6;
+}
+
+.__menu-list a {
+  color: gray;
+}
+
+.fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+
+.icon-down {
+  float: right;
+  margin-right: 20px;
+  font-size: 17px;
+}
+
+.__contact {
+  background: #0f0f0f;
+  padding-bottom: 5px;
+}
+
+.contact-list {
+  margin-top: 20px;
+}
+
+.__contact-list li {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 30px;
+  margin-top: 10px;
+}
+
+.__contact-list li a {
+  color: #fff;
+}
+
+.contact-list li:hover a {
+  text-decoration: none;
+}
+
+.__contact-icon {
+  float: left;
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .__contact {
+    display: block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .__btn-menu {
+    display: none;
+  }
+
+  .__contact {
+    background: #fff;
+    border-bottom: 1px solid #dad6d6;
+  }
+
+  .__mobile-header {
+    background: #fff;
+  }
+
+  .__contact-list li a {
+    color: gray;
+  }
+
+  .nav-menu {
+    display: inline-block;
+  }
+
+  .menu-list {
+    display: none;
+  }
+}

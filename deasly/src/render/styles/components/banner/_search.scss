@@ -1,0 +1,10 @@
+@import 'abstracts/variables';
+@import 'form-search';
+.search {
+    margin: 50px 85px;
+    width: 83%;
+    background: $cl-search-bg;
+    padding: 28px 18px 70px 18px;
+    border-radius: 3px;
+    color: $cl-white;
+}

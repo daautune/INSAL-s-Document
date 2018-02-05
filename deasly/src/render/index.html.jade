@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    title DEASLY
+    link(rel="stylesheet", href="styles/main.css")
+    link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", rel="stylesheet")
+    script(src="JS/bootstrap.js")
+  body
+    header.header
+      header__logo.logo
+      a.logo(href="#") DEASLY
+      header__nav.nav
+        nav__menu.menu
+          ul.menu__menu-list
+          li: a(href="#") Home
+            <i class="	fa fa-angle-bottom"></i>
+            ul.menu-item
+              //- li: a(href="#") Home Deals V1
+              //- li: a(href="#") Home Deals V2
+              - var items = [{href:"#", name: 'Home Deals V1'}, {href:"#", name: 'Home Deals V2'}]
+                each item in items
+                  li: a(href=item.href)=item.name
+          li: a(href="#") Couponts & Deals
+            <i class="	fa fa-angle-bottom"></i>
+          li: a(href="#") Blog
+          li: a(href="#") Admin
+            <i class="	fa fa-angle-bottom"></i>
+      a.btn-search(href="#")
+        i.fa.fa-search(aria-hidden="true")
+    div.banner 
+      h1.title
+        |Best Deals & Coupons
+      p.text
+        |We have 12569 offers from 6122 stores
+        br
+        |Start saving now
+      div.search
+        form.form-search.form-inline(role="form")
+            select.form.form-control
+              - var options = ['Browse By Catergory', 'Appearel', 'Books','Personal Care', 'Education', 'Beverage']
+                    each option in options
+                      option #{option}
+            input.text-search.form-control#exampleInputEmail2(type="email" placeholder="Search for store")
+            button.btn.btn-default(type="submit") SEARCH
+    div.row
+      div.col-md-12
+        div.carousel.slide.multi-item-carousel#theCarousel
+          div.carousel-inner
+            div.item.active
+              div.col-xs-2
+                a(href="#1")
+                  img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-5.jpg")
+            div.item
+              div.col-xs-2
+                a(href="#1")
+                  img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-1.jpg")
+            div.item
+              div.col-xs-2
+                a(href="#1")
+                  img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-2.jpg")
+            div.item
+              div.col-xs-2
+                a(href="#1")
+                  img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-3.jpg")
+            div.item
+              div.col-xs-2
+                a(href="#1")
+                  img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-4.jpg")
+            div.item
+              div.col-xs-2
+                a(href="#1")
+                  img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-5.jpg")
+    //- a.left.carousel-control(href="#theCarousel" data-slide="prev")
+    //-   i.glyphicon.glyphicon-chevron-left
+    //- a.right.carousel-control(href="#theCarousel" data-slide="next")
+    //-   i.glyphicon.glyphicon-chevron-right
+    a.carousel-control.carousel-control-prev(href="#carouselExampleControls" role="button" data-slide="prev")
+      i.fa.fa-angle-left(aria-hidden="true")
+    a.carousel-control.carousel-control-next(href="#carouselExampleControls" role="button" data-slide="next")
+      i.fa.fa-angle-right(aria-hidden="true") 
+//- .row
+//-   .col-md-4.col-12
+//-   .col-md-4.col-12
+//-   .col-md-4.col-12
+ 

@@ -1,0 +1,14 @@
+@import 'abstracts/variables';
+.__btn-menu {
+    display: block;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: $cl-button;
+    margin-top: -65px;
+}
+.glyphicon-align-justify {
+    &:before {
+        content: "\e055";
+    } 
+ }

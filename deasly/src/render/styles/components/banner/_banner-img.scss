@@ -1,0 +1,25 @@
+@import 'abstracts/mixin';
+@import 'abstracts/variables';
+.banner {
+    @include background("http://themes.iamabdus.com/dealsy/1.0/img/home/hero.png");
+    top: 20px;
+}
+.title {
+    text-align: center;
+    color: $cl-banner-text;
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    padding-top: 100px;
+}
+.text {
+    text-align: center;
+    color: $cl-banner-text;
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: .05em;
+    position: relative;
+    top: -30px;
+}

@@ -1,0 +1,16 @@
+.carousel-inner {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+.item {
+    display: inline-block;
+    margin: 0 10px;
+    background: $cl-white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border: 1px solid $cl-white;
+    border-radius: 3px;
+}
+.img-responsive {
+    height: 150px;
+    width: 150px;
+}

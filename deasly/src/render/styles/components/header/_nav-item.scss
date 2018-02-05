@@ -1,0 +1,28 @@
+@import 'abstracts/variables';
+.menu-item {
+    display: none;
+    position: absolute;
+    left: -100px;
+    background: $cl-white;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 60px 10px 10px;
+    clear: both;
+    font-weight: 400;
+
+}
+.menu-item li {
+    display: block;
+}
+.menu-item  a {
+    color: $cl-black;
+}
+.menu-list li:hover .menu-item {
+    display: inline-block;
+}
+.menu-item li:hover a {
+    background-color: $cl-hover-item;
+    color: $cl-black;
+    
+}

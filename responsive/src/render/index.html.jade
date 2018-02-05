@@ -1,0 +1,56 @@
+extends ./../layouts/default.jade
+body
+  block content
+    header
+      nav.__contact
+        ul.__contact-list
+          li: a(href="#") thaoptm2206@gmail.com
+                img.__contact-icon(src="./../icons/email-icon.png")
+          li: a(href="#") +84 902 543 996
+                img.__contact-icon(src="./../icons/phone-icon.png")
+          li: a(href="#") Mai Thảo
+                img.__contact-icon(src="./../icons/skype-icon.png")
+      .container.__mobile-header
+        .row
+          .col.col-md-9
+            img.__logo(src="./../images/logo.png")
+            img.__title(src="./../images/adelfox.png")
+            nav.__nav-menu
+              //- ul.__menu-list
+              //-   li: a(href="#") Home
+              //-         i.fa.fa-angle-bottom
+              //-   li: a(href="#") Pages
+              //-         i.fa.fa-angle-bottom
+              //-   li: a(href="#") Portfolio
+              //-         i.fa.fa-angle-bottom
+              //-   li: a(href="#") Shop
+              //-         i.fa.fa-angle-bottom
+              //-   li: a(href="#") Blog
+              //-         i.fa.fa-angle-bottom
+              //-   li: a(href="#") Shortcodes
+              //-         i.fa.fa-angle-bottom
+              //-   li: a(href="#") Features
+              //-         i.fa.fa-angle-bottom
+          .col.col-md-3
+            button.btn.btn-default.btn-sm.__btn-menu(type="button")
+              span.glyphicon.glyphicon-align-justifyn
+    nav.nav-menu 
+      ul.__menu-list
+        li: a(href="#") Home
+            i.fa.fa-chevron-circle-down.icon-down(aria-hidden="true")
+        li: a(href="#") Pages
+            i.fa.fa-chevron-circle-down.icon-down(aria-hidden="true")
+        li: a(href="#") Portfolio
+            i.fa.fa-chevron-circle-down.icon-down(aria-hidden="true")
+        li: a(href="#") Shop
+            i.fa.fa-chevron-circle-down.icon-down(aria-hidden="true")
+        li: a(href="#") Blog
+            i.fa.fa-chevron-circle-down.icon-down(aria-hidden="true")
+        li: a(href="#") Shortcodes
+            i.fa.fa-chevron-circle-down.icon-down(aria-hidden="true")
+        li: a(href="#") Features
+            i.fa.fa-chevron-circle-down.icon-down(aria-hidden="true")
+          ul.__menu-item
+            - var items = [{href:"#", name: ''}, {href:"#", name: ''}]
+              each item in items
+                li: a(href=item.href)=item.name

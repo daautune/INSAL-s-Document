@@ -1,0 +1,50 @@
+@import 'abstracts/variables';
+.form-search {
+    position: relative;
+    width: 100%;
+    color: $cl-white;
+}
+.form {
+    position: absolute;
+    width: 45%;
+    background: $cl-search-bg;
+    border: 1px solid $cl-white;
+    border-radius: 3px;
+    color: $cl-white;
+    height: 50px;
+}
+.text-search {
+    position: absolute;
+    margin-left: 550px;
+    border: 1px solid $cl-white;
+    background: $cl-search-bg;
+    border-radius: 3px;
+    height: 45px;
+    width: 33%; 
+}
+::-webkit-input-placeholder { 
+    color: $cl-white;
+    letter-spacing: .05em;
+    font-size: 15px;
+}
+.btn {
+    background: $cl-white;
+    float: right;
+    padding: 13px 36px;
+    color: $cl-black;
+    border: 1px solid $cl-white;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.form select:active option {
+    font-family: "Lato",sans-serif;
+    letter-spacing: .05em;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.form option:hover {
+    background: $cl-search-bg;
+}

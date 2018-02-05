@@ -1,0 +1,27 @@
+@import 'abstracts/variables';
+.menu {
+    float: right;
+    margin-right: 100px;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+}
+.menu ul {
+    list-style-type: none;
+}
+.menu-list > li {
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    line-height: 50px;
+    font-size: 18px;
+    padding-right: 60px;
+}
+.menu-list a{
+    color:$cl-black;
+}
+.menu-list li:hover > a {
+    color:$cl-header-text;
+}
+
